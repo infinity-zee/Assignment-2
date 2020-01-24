@@ -1,6 +1,9 @@
 function loop(){
     var multiplicant;
     multiplicant = document.getElementById('multiplicant').value;
+    
+    if (multiplicant == '')
+        multiplicant = 1;
 
     var multiplier;
     var table = ' ';
