@@ -1,0 +1,94 @@
+<!-- Accept birthdate and print age of the user -->
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>
+            Age Calculator
+        </title>
+
+        <script src="./home.js">
+        </script>
+
+        <style>
+            * {
+                padding: 0;
+                margin: 0;
+                /* border: 1px rgb(112, 87, 3) solid; */
+                outline: none;
+            }
+            html, body {
+                width: 100%;
+                height: 100%;
+                background-color: #18153a;
+            }
+            .container {
+                height: 100%;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+            .input-wrapper {
+                align-self: center;
+                flex-grow: 2;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                margin: 30px;
+                border: 2px skyblue solid;
+            }
+            input {
+                text-align: center;
+                margin: 10px;
+                height: 25px;
+                width: 300px;
+                font-weight: bold;
+                border-radius: 10px;
+                background-color: #18153a;
+                color: white;
+                border: 1px white solid;
+            }
+            input::-webkit-outer-spin-button,
+            input::-webkit-inner-spin-button {
+                -webkit-appearance: none;
+            }
+            button {
+                align-self: center;
+                width: 200px;
+                height: 25px;
+                margin: 10px;
+                font-weight: bold;
+                text-align: center;
+                border-radius: 10px;
+                background-color: #18153a;
+                color: white;
+                border: 1px white solid;
+            }
+            button:active {
+                background-color: skyblue;
+            }
+
+
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="input-wrapper">
+                <h1 style="text-align: center; color: white;">Age Calculator</h1>
+                <br>
+                <br>
+                <input type="date" id="bdate" placeholder="Enter Age">
+                <br>
+                <button id="message" onclick="calculateAge()">
+                    Calculate Age
+                </button>
+            </div>
+            <div style="flex-grow: 1;">
+
+            </div>
+        </div>
+    </body>
+</html>
