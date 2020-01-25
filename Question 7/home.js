@@ -1,5 +1,6 @@
 function checkPerfect(val){
     var sum = 0;
+    console.log(val);
 
     for(var div = 1; div < val; div++){
         if((val % div) == 0)
@@ -27,7 +28,7 @@ function start(){
             message = num + ' is not Perfect';
         }
         else{
-            for(var pre = num-1, post = num+1; 1; post++, pre--){
+            for(var pre = num-1, post = Number(num)+1; 1; post++, pre--){
                 if(checkPerfect(pre)){
                     message = num + ' is not Perfect, but ' + pre + ' is';
                     break;
