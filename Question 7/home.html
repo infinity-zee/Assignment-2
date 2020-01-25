@@ -1,0 +1,94 @@
+<!-- Check if a number is perfect or not -->
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>
+            Vowel Count
+        </title>
+
+        <script src="./home.js">
+        </script>
+
+        <style>
+            * {
+                padding: 0;
+                margin: 0;
+                /* border: 1px rgb(112, 87, 3) solid; */
+                outline: none;
+            }
+            html, body {
+                width: 100%;
+                height: 100%;
+                background-color: #18153a;
+            }
+            .container {
+                height: 100%;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+            .input-wrapper {
+                align-self: center;
+                flex-grow: 2;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                margin: 30px;
+                border: 2px skyblue solid;
+            }
+            input {
+                text-align: center;
+                margin: 10px;
+                height: 25px;
+                width: 300px;
+                font-weight: bold;
+                border-radius: 10px;
+                background-color: #18153a;
+                color: white;
+                border: 1px white solid;
+            }
+            input::-webkit-outer-spin-button,
+            input::-webkit-inner-spin-button {
+                -webkit-appearance: none;
+            }
+            button {
+                align-self: center;
+                width: 200px;
+                height: 25px;
+                margin: 10px;
+                font-weight: bold;
+                text-align: center;
+                border-radius: 10px;
+                background-color: #18153a;
+                color: white;
+                border: 1px white solid;
+            }
+            button:active {
+                background-color: skyblue;
+            }
+
+
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="input-wrapper">
+                <h1 style="text-align: center; color: white;">Perfect Number Check</h1>
+                <br>
+                <br>
+                <input type="number" id="num" placeholder="Enter Number">
+                <br>
+                <button id="message" onclick="start()">
+                    Check if Perfect?
+                </button>
+            </div>
+            <div style="flex-grow: 1;">
+
+            </div>
+        </div>
+    </body>
+</html>
