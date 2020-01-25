@@ -1,0 +1,55 @@
+<!-- Print reverse of a given number -->
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+       
+        <title>Sum of Digit</title>
+        
+        <script src="./home.js">
+        </script>
+
+        <style>
+            html, body {
+                max-height: 100%;
+                max-width: 100%;
+                background-color: #6e3608;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+            input {
+                align-self: center;
+                width: 15%;
+                height: 15%;
+                font-size: 90%;
+                text-align: center;
+                border-radius: 10px;
+                border: 2px black solid;
+                outline: #6e3608;
+            }
+            p {
+                align-self: center;
+                margin-top: 5%;
+                max-width: 15%;
+                min-width: 15%;
+                height: 15%;
+                font-size: 150%;
+                text-align: center;
+                border-radius: 10px;
+                border: 2px black solid;
+                background-color: white;
+            }
+        </style>
+
+    </head>
+    
+    <body>
+        <p>Enter a number to find sum of it's digits: </p>
+        <input type="number" id="value" oninput="reverse()">
+        <p id="answer">Sum of Digits</p>
+    </body>
+</html>
+
+
