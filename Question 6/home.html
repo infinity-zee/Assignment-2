@@ -1,0 +1,90 @@
+<!-- Accept a string from the user and pass that string to a function check_vowel() as parameter on button press and count the number of vowels in the string -->
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>
+            Vowel Count
+        </title>
+
+        <script src="./home.js">
+        </script>
+
+        <style>
+            * {
+                padding: 0;
+                margin: 0;
+                /* border: 1px rgb(112, 87, 3) solid; */
+                outline: none;
+            }
+            html, body {
+                width: 100%;
+                height: 100%;
+                background-color: #18153a;
+            }
+            .container {
+                height: 100%;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+            .input-wrapper {
+                align-self: center;
+                flex-grow: 2;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                margin: 30px;
+                border: 2px skyblue solid;
+            }
+            input {
+                text-align: center;
+                margin: 10px;
+                height: 25px;
+                width: 300px;
+                font-weight: bold;
+                border-radius: 10px;
+                background-color: #18153a;
+                color: white;
+                border: 1px white solid;
+            }
+            button {
+                align-self: center;
+                width: 200px;
+                height: 25px;
+                margin: 10px;
+                font-weight: bold;
+                text-align: center;
+                border-radius: 10px;
+                background-color: #18153a;
+                color: white;
+                border: 1px white solid;
+            }
+            button:active {
+                background-color: skyblue;
+            }
+
+
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="input-wrapper">
+                <h1 style="text-align: center; color: white;" id="message">Vowel Counter</h1>
+                <br>
+                <br>
+                <input type="text" id="str" placeholder="Enter string">
+                <br>
+                <button id="count" onclick="check_vowel()">
+                    Press to get Vowel Count
+                </button>
+            </div>
+            <div style="flex-grow: 1;">
+
+            </div>
+        </div>
+    </body>
+</html>
