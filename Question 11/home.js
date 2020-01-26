@@ -1,9 +1,9 @@
 var arrList = {
-    list: '<div class="box"><input type="number" class="array"></div><div class="remove" onclick="remove()"><button>-</button></div><div class="add" onclick="add()"><button>+</button></div>',
+    list: '<div class="box"><h1><input type="number" class="array"></h1></div><div class="remove" onclick="remove()"><button><h1>-</h1></button></div><div class="add" onclick="add()"><button><h1>+</h1></button></div>',
     size: 1
 };
-var box = '<div class="box"><input type="number" class="array"></div>';
-var option = '<div class="remove" onclick="remove()"><button>-</button></div><div class="add" onclick="add()"><button>+</button></div>';
+var box = '<div class="box"><h1><input type="number" class="array"></h1></div>';
+var option = '<div class="remove" onclick="remove()"><button><h1>-</h1></button></div><div class="add" onclick="add()"><button><h1>+</h1></button></div>';
 function start(){
     document.getElementById('array-container').innerHTML = arrList.list;
 }
