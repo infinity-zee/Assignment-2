@@ -1,3 +1,10 @@
+function check(){
+    if(event.key == 'Enter'){
+        start();
+    }
+}
+
+
 function checkPerfect(val){
     var sum = 0;
     console.log(val);
